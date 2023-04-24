@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  padding: 0 4rem;
+}
+.imageContainer{
+  position: relative;
+  padding-top: 2rem;
+  overflow: scroll;
+}
+
+.imageContainer > div {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 2rem;
+  padding: 1rem;
+
+}
+.topSection{
+  top: 0;
+}
+
+.bottomSection {
+  bottom: 0;
+}
+
+input[type="text"]
+input[type="color"]
+{
+  width: 100%;
+  font-size: 1.5rem;
+  height: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  
+}
+label {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.row {
+  display:flex;
+  flex-direction:row;
+}
+
+@media only screen and (max-width: 500px) {
+  .row{
+    flex-direction: column; 
+  }
+}
+
+
+.input-group {
+  flex: 1;  
+  display: flex;
+  flex-direction: column; 
+  margin: .5rem .25rem;
+}
+
+.image-group{
+  flex: 1;
+  flex-direction: column;
+  margin: 10px 5px;
+  text-align: left;
+}
+
+button{
+  height: 1.5rem;
+}
